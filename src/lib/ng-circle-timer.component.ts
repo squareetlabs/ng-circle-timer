@@ -30,6 +30,59 @@ export type StartDate = Date | string | number;
     </div>
   `,
   styles: [
+    `:host {
+      .base-timer {
+        position: relative;
+        height: 200px;
+        width: 200px;
+
+        &-circle {
+          fill: none;
+          stroke: none;
+        }
+
+        &-stroke {
+          stroke-width: 1px;
+          stroke: grey;
+        }
+
+        &-completed {
+        // stroke-width: 2px;
+        // stroke: #88b462;
+
+          stroke-width: 1px;
+          stroke: grey;
+        }
+
+        .time {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 26px;
+
+          img {
+            height: 80px;
+          }
+        }
+
+        #remaining-time-stroke {
+          stroke-width: 2px;
+          transform: rotate(90deg);
+          transform-origin: center;
+          transition: 1s linear all;
+          stroke: #1cbbf8;
+        }
+
+        .base-timer-svg {
+          transform: scaleX(-1);
+        }
+      }
+    }
+    `
   ]
 })
 export class NgCircleTimerComponent implements OnInit, OnDestroy {
