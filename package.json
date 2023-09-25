@@ -1,0 +1,36 @@
+{
+  "name": "ng-circle-timer",
+  "version": "1.0.1",
+  "description": "Simple circle countdown timer component for Angular.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squareetlabs/ng-circle-timer.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/squareetlabs/ng-circle-timer",
+  "keywords": [
+    "circle countdown timer",
+    "countdown timer",
+    "circle timer",
+    "circle countdown",
+    "squareetlabs"
+  ],
+  "author": "Jacobo Cantorna Cigarrán <jacobo@squareet.com.com> (https://squareet.com)",
+  "contributors": [
+    "Alberto Rial Barreiro <alberto@squareet.com> (https://squareet.com)"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/squareetlabs/ng-circle-timer/issues"
+  },
+  "main": "src/public-api.ts",
+  "scripts": {
+    "test": "npm run test"
+  }
+}
